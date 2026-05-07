@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import PresentationSlides from "@/components/PresentationSlides";
+import ParagrafSite from "@/components/ParagrafSite";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -14,5 +14,5 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  return <PresentationSlides />;
+  return <ParagrafSite />;
 }
