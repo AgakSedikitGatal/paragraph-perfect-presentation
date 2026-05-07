@@ -79,13 +79,15 @@ const Hero = () => {
         ]}}
         transition={{ duration: 12, repeat: Infinity }}
       />
-      <div
-        className="absolute inset-0 -z-10 opacity-[0.07]"
+      <motion.div
+        className="absolute inset-0 -z-10 opacity-[0.025] pointer-events-none"
         style={{
           backgroundImage:
             "linear-gradient(oklch(0.97 0.01 270) 1px, transparent 1px), linear-gradient(90deg, oklch(0.97 0.01 270) 1px, transparent 1px)",
           backgroundSize: "60px 60px",
         }}
+        animate={{ backgroundPositionX: ["0px", "-60px"] }}
+        transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
       />
 
       <motion.div style={{ y, opacity }} className="max-w-7xl mx-auto px-6 lg:px-10 relative">
